@@ -1,2 +1,2 @@
 # crud
-using JavaScript to make a crud and some simple tasks .
+using JavaScript to make a crud and some simple tasks.
