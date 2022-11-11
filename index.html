@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Crud</title>
+    <style></style>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/3.jpg">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header  id="Header">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">7ooda</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link sone" href="#Header">Header</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link sone " href="#About">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link sone" href="#Cruddd">Crud</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link sone" href="#Portofolio">Portofolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link sone" href="#Data">Data</a>
+                  </li>
+                </ul>
+                <div>
+                    <button type="button" class="btn btn-info PPPcolor" data-toggle="modal" data-target="#addData">Contact</button>
+                 </div>
+             </div>
+             
+            </div>
+            
+          </nav>
+        <div id="bgground" class="background d-flex justify-content-center align-items-center">
+            <div class="content-hed ">
+                <h2>Web</h2>
+                <p>The Web is just one of the ways that information is shared over the Internet.</p>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="modal fade" id="addData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12 p-2">
+                          <input type="text" placeholder="user name" class="form-control">
+                      </div>
+                      <div class="col-md-12 p-2">
+                        <input type="email" placeholder="email" class="form-control">
+                      </div>
+                      <div class="col-md-12 p-2">
+                        <input type="text" placeholder="phone" class="form-control">
+                      </div>
+                      <div class="col-md-12 p-2">
+                          <textarea placeholder="Add Desc" class="form-control" cols="20" rows="8"></textarea>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <section id="About" class="container py-3 ">
+        <div>
+            <h2 class="special-heading">Hello</h2>
+            <p>We are born to create</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/3.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <div class="conn">
+                    <h2>Web</h2>
+                    <p>Web pages are formatted in a language called Hypertext Markup Language (HTML). It this language that allows users to click through pages on the Web via links. The Web uses HTTP protocol to transmit data and share information. Browsers such as Internet Explorer, Google Chrome or Mozilla Firefox are used to access Web documents, or Web pages, which are connected via links.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Cruddd" class="container ">
+        <div class="container">
+            <div id="crud" class="form-group">
+                <label>Product Name:</label>
+                <input id="productName" class="form-control">
+            </div>
+            <div id="crud" class="form-group">
+                <label>Product Model:</label>
+                <input id="productModel" class="form-control">
+            </div>
+            <div id="crud" class="form-group">
+                <label>Product Salary:</label>
+                <input id="productSalary" class="form-control">
+            </div>
+            <div id="crud" class="form-group">
+                <label>Product Desc:</label>
+                <textarea id="productDesc" class="form-control"></textarea>
+            </div>
+            <button id="add" onclick="addProduct()" class="btn btn-info mt-3 float-right">Add Product</button>
+            <div class="clr"></div>
+         </div>
+    </section>
+
+    <section id="Portofolio" class="container py-3 " >
+        <h2 class="porto">Portofolio</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="content contentt pb-1">
+                        <img src="images/9.jpg" class="img-fluid" id="port">
+                        <div class="min-content">
+                            <h3>Learning</h3>
+                            <p>learning operations is an approach to managing lifecycle. </p>
+                        </div>
+                     </div>
+                     <div class="content contentt">
+                        <img src="images/11.jpg" class="img-fluid" id="port">
+                        <div class="min-content">
+                            <h3>Learning</h3>
+                            <p>learning operations is an approach to managing lifecycle.</p>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <img src="images/mm.jpeg" class="img-fluid" id="port">
+                        <div class="max-content">
+                            <h3>Learning</h3>
+                            <p>learning operations is an approach to managing lifecycle.</p>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="content contentt pb-1">
+                        <img src="images/12.jpg" class="img-fluid" id="port">
+                        <div class="min-content">
+                            <h3>Learning</h3>
+                            <p>learning operations is an approach to managing lifecycle.</p>
+                        </div>
+                     </div>
+                     <div class="content contentt">
+                        <img src="images/13.jpg" class="img-fluid" id="port">
+                        <div class="min-content">
+                            <h3>Learning</h3>
+                            <p>learning operations is an approach to managing lifecycle.</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="showLayout" class="layOut">
+            <div class="layOut-img d-flex justify-content-between align-items-center ">
+                <i id="close" class="fas fa-window-close"></i>
+                <i id="prev" class="fas fa-arrow-alt-circle-left"></i>
+                <i id="next" class="fas fa-arrow-alt-circle-right"></i>
+            </div>
+        </div>
+    </section>
+    <section id="Data" class="container py-3 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="contt">
+                        <h2><span class="spa">O</span>ur Products</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn-info mt-3" onclick="displayData()">Show</button>
+                     </div>
+                </div>
+                <div class="col-md-9 row" id="productsRow">
+                    
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contact" id="contact">
+            <div class="container">
+                <h2 class="special-heading">Contact</h2>
+                <p>We are born to create</p>
+                <div class="info">
+                    <p class="label">Feel free to drop us a line at:</p>
+                    <a href="mailto:7Oooda@mail.com?subject=Contact" class="link">7Oooda@mail.com</a>
+                    <div class="social">
+                        Find Us On Social Networks
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2021 Company, Inc</p>
+            </footer>
+        </div>
+
+    </section>
+
+    <section id="Settings">
+        <div class="options-container d-flex">
+            <div class="option-box">
+                <h3>Colors</h3>
+                <span id="spanColorO" class="spanClass"></span>
+                <span id="spanColorT" class="spanClass"></span>
+                <span id="spanColorTH" class="spanClass"></span>
+                <span id="spanColorF" class="spanClass"></span>
+                <span id="spanColorFi" class="spanClass"></span>
+                <span id="spanColorS" class="spanClass"></span>
+                <h3>Background</h3>
+                <img src="images/3.jpg" class="Bg-img">
+                <img src="images/me.jpg" class="Bg-img" >
+                <img src="images/mm.jpeg" class="Bg-img" >
+                <img src="images/mmm.jpg" class="Bg-img" >
+            </div>
+            <div>
+                <i id="color-item-span" class="fas fa-cogs"></i>
+          </div>
+        </div>
+    </section>
+    <div class="btnset">
+        <i id="upp" class="fab fa-ups"></i>
+    </div>
+
+
+    <script src="js/index.js"></script>
+</body>
